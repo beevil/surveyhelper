@@ -1,0 +1,102 @@
+C3D CODING (THE WAY I LIKE IT!!)
+
+FEATURE[space]CODE/[note]
+
+CODES:
+B = BEGIN LINE
+E = END LINE
+CLS = CLOSE LINE
+H = HORIZ O/S (NO SPACE ”FEATURE H2.5 H-2.5 B/ CL”)
+V = VERT O/S   
+A = BEGIN ARC/CURVE
+AE = END ARC
+POC = POINT ON ARC/CURVE
+/ = NOTE SEPERATOR
+CIR  = CIRCLE (POINT IS CENTER "CIR25"= 25' CIRCLE)
+X = Extend ("EOC X25 /to building ") NO SPACE “X25”
+
+FEATURES:
+BC = Building Corner (NOT BRASS CAP)
+BFW = Bottom face Wall ("BFW B /stone")
+BOL  = bollard
+CATV = Cable line location (above or below ground)
+CC = Curb Cut
+CI = Curb Inlet
+CK or CHK = Check Shot
+CLD or FLD = Flow line Ditch
+CMP = Corrugated metal pipe
+CPP = Corrugated Plastic Pipe, or use HDPE
+CO = Clean-out
+COL or CLM = Column 
+CP = Cable Pedestal
+CS = Curb Stop
+DECK or DK = Deck
+DMH = Drainage Manhole (Storm)
+DW = Drywell
+DWS or DYS = DASHEDWhite/Yellow Stripe (road)
+SYS or SWS = SOLID Yellow/White Stripe (road)
+EA or EOA = Edge of Asphalt
+OE or UE = Overhead/Underground Electric Line
+EM = Electric meter
+EMH = Electric manhole
+EOC or EC= Edge of Concrete
+EOF or FS= Edge of Flagstone
+EOG or EG = Edge of Gravel
+EOP or EP = Edge of Pan
+EOV or EV = Edge of Vegetation
+EOW or EW= Edge of Water
+EWK = Edge of Walkway
+ET = Electric Trans (edge of conc. pad if applicable)
+FH = Fire Hydrant
+FL = Flow Line (example “FL  B/ditch”)
+FLC = Flow Line CURB
+FLD = Flow Line Ditch
+FND = Found Monument (FND RAC /28643)
+FO = Fiber Optics Line
+FX = fence follow this with " /wire" " /splitrail"
+GB = Grade Break
+GM = Gas Meter
+GY or GW = Guy Wire or Pole
+HYD = all other hydrants (yard hydrant etc)
+LP = LIGHT POLE
+MH = Manhole (unidentified manhole)
+OE = Overhead Electric
+OU = Overhead Utilities
+PP = Power/Utility Pole
+POL = THIS IS A NOTE NOT A FEATURE
+RAC = Rebar and Alum. Cap (use FND in front of this)
+RBC = Rebar and Brass Cap (use FND in front of this)
+RC = Rebar and Plastic Cap (use FND in front of this)
+RCP = Reinforced CONCRETE pipe
+REB = Rebar with no cap (“REB / #5 disturbed”)
+RRTIE = use for planters/walls made from railroad ties  (ex. "RRTIE /BFW")
+SGN = Sign
+SMH = SEWER manhole (NOT STORM USE "DMH")
+SS = SEWER Service 
+ST = STORM drain line
+STEP = TOP FRONT FACE STEP
+T = Topo
+TB = TOP BANK
+TBC = Top Back Curb
+TBW = TOP BACK WALL
+TFC = Top Face Curb
+TMH = Telephone Manhole
+TOB = Top of Bank
+TOE = Bottom of Bank/toe of slope
+TP = Telephone Ped
+TRD [DIA] [DRIPLINE] = Deciduous Tree (ex. "TRD 4 8")
+TRP [DIA] [DRIPLINE] = coniferous (pine) trees
+MULTIPLE TREES: 2 TRP [DIA] [DRIPLINE]
+                                3 TRP [DIA] [DRIPLINE]
+TRANS =  Transformer pad (or 4 corners of Transformer)
+TS = Control Point
+UE = Underground Electric
+UG = Underground Gas
+UMH = Utility Manhole
+UT = Underground Telephone
+UU = Underground Utilities
+UW = Underground Water
+WELL = any wellhead
+WM = Water  Meter
+WS = Water  Service
+WV = Water valve
