@@ -8,3 +8,5 @@ C:\Users\USERNAME\AppData\Roaming\Sublime Text 2\Packages\User\
 Now every time you open an .csv or .fbk in Sublime Text the context highlighting will show.
 
 Recommended for the "Monokai" color scheme.
+
+This file's context highlighting is based off of the Civil 3D field codes located in c3d_coding.txt in this repo.
