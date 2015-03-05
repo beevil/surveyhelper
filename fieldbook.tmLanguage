@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+	<dict>
+		<key>name</key>
+		<string>fieldbook</string>
+		<key>patterns</key>
+		<array>
+
+<dict>
+				<key>match</key>
+				<string>^(CONSTANT|OFFSET|F1|F2)</string>
+				<key>captures</key>
+				<dict>
+					<key>1</key>
+					<dict>
+						<key>name</key>
+						<string>storage.type</string>
+					</dict>
+				</dict>
+</dict>
+<dict>
+				<key>match</key>
+				<string>^(STN)</string>
+				<key>captures</key>
+				<dict>
+					<key>1</key>
+					<dict>
+						<key>name</key>
+						<string>entity.name.class</string>
+					</dict>
+				</dict>
+</dict>
+<dict>
+				<key>match</key>
+				<string>^(! HR.*|! BS.*)</string>
+				<key>captures</key>
+				<dict>
+					<key>1</key>
+					<dict>
+						<key>name</key>
+						<string>comment</string>
+					</dict>
+				</dict>
+</dict>
+
+<dict>
+				<key>match</key>
+				<string>^(!.*)</string>
+				<key>captures</key>
+				<dict>
+					<key>1</key>
+					<dict>
+						<key>name</key>
+						<string>comment</string>
+					</dict>
+				</dict>
+</dict>
+		
+<dict>
+				<key>match</key>
+				<string>^(BS.*)</string>
+				<key>captures</key>
+				<dict>
+					<key>1</key>
+					<dict>
+						<key>name</key>
+						<string>variable.parameter</string>
+					</dict>
+				</dict>
+</dict>
+
+<dict>
+				<key>match</key>
+				<string>^(PRISM.*)</string>
+				<key>captures</key>
+				<dict>
+					<key>1</key>
+					<dict>
+						<key>name</key>
+						<string>variable.parameter</string>
+					</dict>
+				</dict>
+</dict>
+						<dict>
+				<key>match</key>
+				<string>^(UNIT.*)</string>
+				<key>captures</key>
+				<dict>
+					<key>1</key>
+					<dict>
+						<key>name</key>
+						<string>invalid.deprecated</string>
+					</dict>
+				</dict>
+</dict>
+<dict>
+				<key>match</key>
+				<string>^(SCALE FACTOR.*)</string>
+				<key>captures</key>
+				<dict>
+					<key>1</key>
+					<dict>
+						<key>name</key>
+						<string>invalid.deprecated</string>
+					</dict>
+				</dict>
+</dict>
+<dict>
+				<key>match</key>
+				<string>^(BEG.*|C3|END.*|beg.*|c3|end.*)</string>
+				<key>captures</key>
+				<dict>
+					<key>1</key>
+					<dict>
+						<key>name</key>
+						<string>keyword</string>
+					</dict>
+				</dict>
+</dict>
+<dict>
+			<key>begin</key>
+			<string>("TS|"ts|"CK|"ck|"CHK|"CK|"FND|"fnd)</string>
+			<key>beginCaptures</key>
+			<dict>
+				<key>0</key>
+				<dict>
+					<key>name</key>
+					<string>entity.name.tag</string>
+				</dict>
+			</dict>
+			
+			<key>end</key>
+			<string>"</string>
+			<key>endCaptures</key>
+			<dict>
+				<key>0</key>
+				<dict>
+					<key>name</key>
+					<string>entity.name.tag</string>
+				</dict>
+			</dict>
+			<key>name</key>
+			<string>entity.name.tag</string>
+</dict>
+
+
+<dict>
+			<key>begin</key>
+			<string>"</string>
+			<key>beginCaptures</key>
+			<dict>
+				<key>0</key>
+				<dict>
+					<key>name</key>
+					<string>constant.numeric</string>
+				</dict>
+			</dict>
+			<key>end</key>
+			<string>"</string>
+			<key>endCaptures</key>
+			<dict>
+				<key>0</key>
+				<dict>
+					<key>name</key>
+					<string>constant.numeric</string>
+				</dict>
+			</dict>
+			<key>name</key>
+			<string>storage.type</string>
+</dict>
+
+
+
+
+
+		</array>
+		<key>scopeName</key>
+		<string>text.fieldbook</string>
+	</dict>
+</plist>

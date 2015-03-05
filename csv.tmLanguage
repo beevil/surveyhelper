@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+	<dict>
+		<key>name</key>
+		<string>csv</string>
+		<key>patterns</key>
+		<array>
+<dict>
+				<key>match</key>
+				<string>^(CONSTANT|OFFSET|F1|F2)</string>
+				<key>captures</key>
+				<dict>
+					<key>1</key>
+					<dict>
+						<key>name</key>
+						<string>storage.type</string>
+					</dict>
+				</dict>
+</dict>
+<dict>
+				<key>match</key>
+				<string>^(STN)</string>
+				<key>captures</key>
+				<dict>
+					<key>1</key>
+					<dict>
+						<key>name</key>
+						<string>entity.name.tag</string>
+					</dict>
+				</dict>
+</dict>
+<dict>
+				<key>match</key>
+				<string>^(UNIT.*)</string>
+				<key>captures</key>
+				<dict>
+					<key>1</key>
+					<dict>
+						<key>name</key>
+						<string>invalid.deprecated</string>
+					</dict>
+				</dict>
+</dict>
+<dict>
+				<key>match</key>
+				<string>^(SCALE FACTOR.*)</string>
+				<key>captures</key>
+				<dict>
+					<key>1</key>
+					<dict>
+						<key>name</key>
+						<string>invalid.deprecated</string>
+					</dict>
+				</dict>
+</dict>
+<dict>
+				<key>match</key>
+				<string>(,ch.*|,CH.*|,CK.*|,ck.*|CHECK.*|check.*|chk.*|CHK.*|bs ck.*|BS CK.*|bsck.*|BSCK.*)</string>
+				<key>captures</key>
+				<dict>
+					<key>1</key>
+					<dict>
+						<key>name</key>
+						<string>variable.parameter</string>
+					</dict>
+				</dict>
+</dict>
+<dict>
+				<key>match</key>
+				<string>(,e |,E |BAD|bad|HR|hr)</string>
+				<key>captures</key>
+				<dict>
+					<key>1</key>
+					<dict>
+						<key>name</key>
+						<string>invalid</string>
+					</dict>
+				</dict>
+</dict>
+
+<dict>
+				<key>match</key>
+				<string>(,b |,B )</string>
+				<key>captures</key>
+				<dict>
+					<key>1</key>
+					<dict>
+						<key>name</key>
+						<string>invalid.deprecated</string>
+					</dict>
+				</dict>
+</dict>
+<dict>
+				<key>match</key>
+				<string>(/.*)</string>
+				<key>captures</key>
+				<dict>
+					<key>1</key>
+					<dict>
+						<key>name</key>
+						<string>invalid.deprecated</string>
+					</dict>
+				</dict>
+</dict>
+<dict>
+				<key>match</key>
+				<string>(fd.*|fnd.*|BLM.*|blm.*|FND.*|fnd.*|RAC.*|RBC.*|RC.*|RCP.*|REB.*|rac.*|rbc.*|rc.*|rcp.*|reb.*)</string>
+				<key>captures</key>
+				<dict>
+					<key>1</key>
+					<dict>
+						<key>name</key>
+						<string>keyword</string>
+					</dict>
+				</dict>
+</dict>
+<dict>
+				<key>match</key>
+				<string>(TS.*|ts.*|CP.*|cp.*)</string>
+				<key>captures</key>
+				<dict>
+					<key>1</key>
+					<dict>
+						<key>name</key>
+						<string>entity.other.inherited-class</string>
+					</dict>
+				</dict>
+</dict>
+<dict>
+				<key>match</key>
+				<string>(PRO|pro)</string>
+				<key>captures</key>
+				<dict>
+					<key>1</key>
+					<dict>
+						<key>name</key>
+						<string>constant.numeric</string>
+					</dict>
+				</dict>
+</dict>
+<dict>
+				<key>match</key>
+				<string>^(END.*)</string>
+				<key>captures</key>
+				<dict>
+					<key>1</key>
+					<dict>
+						<key>name</key>
+						<string>keyword</string>
+					</dict>
+				</dict>
+</dict>
+<dict>
+				<key>match</key>
+				<string>(BC|BFW|BOL|CATV|CC|CI|CK|CHK|CL|CLD|FLD|FD|CMP|CPP|CO|COL|CLM|CP|CS|DECK|DK|DMH|DW|DWS|DYS|SYS|SWS|EA|EOA|OE|UE|EM|EMH|EOC|EC|EOF|FS|EOG|EG|EOP|EP|EOV|EV|EOW|EW|EWK|ET|FH|FL|FLC|FLD|FO|FX|GB|GM|GY|GW|HYD|LP|MH|OE|OU|PP|POL|RRTIE|SGN|SMH|SS|ST|STEP|TB|TBC|TBW|TFC|TMH|TOB|TOE|TP|TRD|TRP|TRANS|TS|UE|UG|UMH|UT|UU|UW|WELL|WM|WS|WV|TOPO|T|bc|bfw|bol|catv|cc|ci|ck|chk|cl|cld|fld|cmp|cpp|co|col|clm|cp|cs|deck|dk|dmh|dw|dws|dys|sys|sws|ea|eoa|oe|ue|em|emh|eoc|ec|eof|fs|fld|FD|eog|eg|eop|ep|eov|ev|eow|ew|ewk|et|fh|fl|flc|fld|fo|fx|gb|gm|gy|gw|hyd|lp|mh|oe|ou|pp|pol|rrtie|sgn|smh|ss|st|step|tb|tbc|tbw|tfc|tmh|tob|toe|tp|trd|trp|trans|ue|ug|umh|ut|uu|uw|well|wm|ws|wv|topo|t|\b^([0-9]{1,6})\b)</string>
+				<key>captures</key>
+				<dict>
+					<key>1</key>
+					<dict>
+						<key>name</key>
+						<string>storage.type</string>
+					</dict>
+				</dict>
+</dict>
+		</array>
+		<key>scopeName</key>
+		<string>text.csv</string>
+</dict>
+</plist>
