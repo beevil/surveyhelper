@@ -68,7 +68,7 @@
 </dict>
 <dict>
 				<key>match</key>
-				<string>(,e |,E |BAD|bad|HR|hr)</string>
+				<string>(BAD|bad|HR|hr| e | E | e| E)</string>
 				<key>captures</key>
 				<dict>
 					<key>1</key>
@@ -78,10 +78,9 @@
 					</dict>
 				</dict>
 </dict>
-
 <dict>
 				<key>match</key>
-				<string>(,b |,B )</string>
+				<string>( b | B | b| B)</string>
 				<key>captures</key>
 				<dict>
 					<key>1</key>
@@ -99,7 +98,7 @@
 					<key>1</key>
 					<dict>
 						<key>name</key>
-						<string>invalid.deprecated</string>
+						<string>entity.name.class</string>
 					</dict>
 				</dict>
 </dict>
